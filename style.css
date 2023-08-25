@@ -46,7 +46,7 @@
 .newsfeed {
     grid-column: 5 / 6;
     grid-row: 2 / 7;
-    background-color: #E2E8F0;
+    background-color: #fff7ed;
 }
 
 .dashMenu {
@@ -125,6 +125,10 @@ h3 {
     background-color: #f59e0b;
     justify-self: start;
 }
+.searchBar:hover {
+    background-color: #e0920a;
+    
+}
 
 .headerIconOne {
     justify-self: end;
@@ -168,3 +172,130 @@ h3 {
     background-color: #5b42c7;
 }
 
+.article {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+}
+
+.articleOne {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.articleBox {
+    width: 80%;
+    height: 90%;
+    background-color:#fed7aa;
+    place-self: center;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: grid;
+    grid-template-rows: 60% 40%;
+    transition: 0.15s;
+    cursor: pointer;
+}
+.articleBox:hover {
+    transform: scale(1.02);
+}
+
+.textGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin-top: 1rem;
+}
+
+.textGrid > * {
+    place-self: center;
+    width: 80%;
+}
+
+.logosGrid {
+    display: grid;
+    grid-template-columns: 40% 1fr 1fr 1fr;
+}
+
+.logoImg {
+    width: 30%;
+    place-self: center;
+}
+
+.textGrid p {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.projectTitle {
+    margin-left: 2.5rem;
+}
+
+.newsfeed {
+    display: grid;
+    grid-template-rows: 0.3fr 1fr 0.2fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.newsBox {
+    width: 75%;
+    height: 90%;
+    background-color: #fed7aa;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: grid;
+    grid-template-rows: repeat(9, auto);
+    padding: 1rem 0;
+}
+
+.newsfeed > * {
+    place-self: center;
+}
+
+.newsTitle {
+    justify-self: start;
+    margin-left: 2.3rem;
+}
+
+.newsBox > * {
+    width: 80%;
+    font-size: 0.8rem;
+    place-self: center;
+}
+
+.newsBox p {
+    font-size: 0.6rem;
+    opacity: 0.5;
+}
+
+.newsBoxTwo {
+    width: 75%;
+    height: 90%;
+    background-color: #fed7aa;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: grid;
+    grid-template-rows: repeat(4, 25%);
+    grid-template-columns: 30% auto;
+    font-size: 0.8rem;
+    padding: 0 1rem;
+}
+
+
+
+.newsBoxTwo > * {
+    place-self: center;
+}
+
+.profileLogo {
+    width: 70%;
+    border-radius: 10rem;
+    justify-self: center;
+}
+
+.userTag {
+    justify-self: start;
+}
+
+.userTag h5 {
+    opacity: 0.6;
+}
